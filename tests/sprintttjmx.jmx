@@ -50,11 +50,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="login">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="login" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-94">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-94" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -99,7 +99,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-95">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-95" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -158,7 +158,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-96">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-96" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -217,7 +217,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-97">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-97" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -276,7 +276,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-98">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-98" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -335,7 +335,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-99">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-99" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -394,7 +394,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-100">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-100" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -443,7 +443,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-101">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-101" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -500,7 +500,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-102">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-102" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -556,7 +556,7 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
@@ -580,7 +580,7 @@ if (matcher.find()) {
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-103">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="login-103" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -1650,7 +1650,7 @@ if (matcher.find()) {
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Book Flight">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Book Flight" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -1666,7 +1666,7 @@ if (matcher.find()) {
             <stringProp name="variableNames">depart,arrival</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-127">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-127" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -1799,7 +1799,7 @@ if (matcher.find()) {
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-128">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-128" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -2664,7 +2664,7 @@ if (matcher.find()) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-143">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-143" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -2720,7 +2720,7 @@ if (matcher.find()) {
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
               <stringProp name="scriptLanguage">groovy</stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename"></stringProp>
@@ -2744,7 +2744,7 @@ if (matcher.find()) {
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-147">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Book Flight-147" enabled="true">
             <stringProp name="HTTPSampler.domain">192.168.31.253</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -4366,7 +4366,7 @@ if (matcher.find()) {
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Canclee" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Canclee">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
