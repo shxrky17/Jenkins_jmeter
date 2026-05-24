@@ -23,18 +23,20 @@ pipeline {
 
         stage('Run JMeter Test') {
 
-            steps {
+    steps {
 
-                bat """
-                %JMETER_HOME%\\bin\\jmeter.bat ^
-                -n ^
-                -t tests\\sprintttjmx.jmx ^
-                -l results.csv ^
-                -e ^
-                -o report
-                """
-            }
-        }
+        bat """
+        if exist report rmdir /s /q report
+
+        %JMETER_HOME%\\bin\\jmeter.bat ^
+        -n ^
+        -t tests\\sprintttjmx.jmx ^
+        -l results.csv ^
+        -e ^
+        -o report
+        """
+    }
+}
 
         stage('Performance Gate') {
 
