@@ -23,30 +23,29 @@ pipeline {
 
         stage('Run JMeter Test') {
 
-    stage('Run JMeter Test') {
+            steps {
 
-    steps {
+                bat """
+                if exist report rmdir /s /q report
+                if exist results.csv del /f /q results.csv
 
-        bat """
-        if exist report rmdir /s /q report
-        if exist results.csv del /f /q results.csv
+                %JMETER_HOME%\\bin\\jmeter.bat ^
+                -n ^
+                -t tests\\sprintttjmx.jmx ^
+                -l results.csv ^
+                -e ^
+                -o report
+                """
+            }
+        }
 
-        %JMETER_HOME%\\bin\\jmeter.bat ^
-        -n ^
-        -t tests\\sprintttjmx.jmx ^
-        -l results.csv ^
-        -e ^
-        -o report
-        """
-    }
-}
         stage('Performance Gate') {
 
             steps {
 
                 script {
 
-                    def lines = readFile('results.csv').split('\n')
+                    def lines = readFile('results.csv').split('\\n')
 
                     int total = lines.size() - 1
                     int failed = 0
