@@ -15,6 +15,7 @@ pipeline {
         stage('Checkout Code') {
 
             steps {
+
                 git branch: 'main',
                     url: 'https://github.com/shxrky17/Jenkins_jmeter.git'
             }
@@ -46,11 +47,13 @@ pipeline {
                     int total = lines.size() - 1
                     int failed = 0
 
-                    for (line in lines.drop(1)) {
+                    for (int i = 1; i < lines.size(); i++) {
+
+                        def line = lines[i]
 
                         def cols = line.split(',')
 
-                        if (cols[7] == 'false') {
+                        if (cols.size() > 7 && cols[7] == 'false') {
                             failed++
                         }
                     }
