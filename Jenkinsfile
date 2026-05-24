@@ -15,7 +15,8 @@ pipeline {
         stage('Checkout Code') {
 
             steps {
-                git 'https://github.com/shxrky17/Jenkins_jmeter.git'
+                git branch: 'main',
+                    url: 'https://github.com/shxrky17/Jenkins_jmeter.git'
             }
         }
 
