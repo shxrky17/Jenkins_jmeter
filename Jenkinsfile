@@ -23,10 +23,13 @@ pipeline {
 
         stage('Run JMeter Test') {
 
+    stage('Run JMeter Test') {
+
     steps {
 
         bat """
         if exist report rmdir /s /q report
+        if exist results.csv del /f /q results.csv
 
         %JMETER_HOME%\\bin\\jmeter.bat ^
         -n ^
@@ -37,7 +40,6 @@ pipeline {
         """
     }
 }
-
         stage('Performance Gate') {
 
             steps {
