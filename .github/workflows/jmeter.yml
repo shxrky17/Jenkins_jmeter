@@ -27,7 +27,7 @@ jobs:
         run: |
           apache-jmeter-5.6.3/bin/jmeter \
           -n \
-          -t tests/webtours.jmx \
+          -t tests/sprintttjmx.jmx \
           -l results.jtl \
           -e \
           -o report
