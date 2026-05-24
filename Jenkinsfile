@@ -31,7 +31,7 @@ pipeline {
 
                 %JMETER_HOME%\\bin\\jmeter.bat ^
                 -n ^
-                -t tests\\sprintttjmx.jmx ^
+                -t tests\\s.jmx ^
                 -l results.csv ^
                 -e ^
                 -o report
