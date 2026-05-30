@@ -7,6 +7,7 @@
       </elementProp>
     </TestPlan>
     <hashTree>
+    
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
